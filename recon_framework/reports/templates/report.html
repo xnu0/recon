@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recon Report - {{ data.target }}</title>
+</head>
+<body>
+    <h1>Reconnaissance Report for {{ data.target }}</h1>
+    <p>Generated at {{ data.generated_at }}</p>
+    <h2>Summary</h2>
+    <ul>
+        <li>Subdomains: {{ data.summary.total_subdomains }}</li>
+        <li>Live Hosts: {{ data.summary.live_hosts }}</li>
+        <li>Vulnerabilities: {{ data.summary.total_vulnerabilities }}</li>
+    </ul>
+</body>
+</html>
