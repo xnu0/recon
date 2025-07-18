@@ -1,0 +1,19 @@
+stealth:
+  mode: "stealth"
+  timeout: 60
+  threads: 5
+  delay_range: [2, 5]
+  nuclei_config:
+    severity: ["high", "critical"]
+
+normal:
+  mode: "normal"
+  timeout: 30
+  threads: 10
+  delay_range: [0.5, 1.5]
+
+aggressive:
+  mode: "aggressive"
+  timeout: 15
+  threads: 25
+  delay_range: [0.01, 0.1]
